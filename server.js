@@ -22,6 +22,10 @@ app.get('/', (req, res) => {
 const lunchRoutes = require('./routes/lunchRoutes');
 app.use('/api/lunch', lunchRoutes); 
 
+const orderRoutes = require('./routes/orderRoutes');
+app.use('/api/user', orderRoutes);
+
+
 // Start server
 app.listen(PORT, () => {
   console.log(`✅ MySQL connected!`);
